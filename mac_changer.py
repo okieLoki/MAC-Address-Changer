@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-from code import interact
-from email import parser
 import subprocess
 import optparse
+import re
 
 def get_arguments():
     parser= optparse.OptionParser()
@@ -34,4 +33,11 @@ change_mac(options.interface,options.new_mac)
 
 ifconfig_result = subprocess.check_output(["ifconfig",options.interface])
 
-print(ifconfig_result)
+regex = r'\w\w:\w\w:\w\w:\w\w:\w\w:\w\w'
+mac_address_search_result = re.search(regex, str(ifconfig_result))
+
+if mac_address_search_result:
+    print(mac_address_search_result.group(0))
+else:
+    print("[-] Could not read MAC address.")
+
