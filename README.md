@@ -10,22 +10,22 @@ Changing the assigned MAC address may allow the user to bypass access control li
 
 Clone the github repository and change the directory
 ```bash
-    git clone https://github.com/okieLoki/MAC-Address-Changer
-    cd MAC-Address-Changer
+git clone https://github.com/okieLoki/MAC-Address-Changer
+cd MAC-Address-Changer
 ```
 Run python3 to executive the file
 ```bash
-    python3 mac_changer.py -i (interface) -m (mac address)
+python3 mac_changer.py -i (interface) -m (mac address)
 ```
 ```bash                          
-    python3 mac_changer.py --interface i (interface) --mac (mac address)
+python3 mac_changer.py --interface i (interface) --mac (mac address)
 ```
 To get help about the commands use the help command
 ```bash
-    python3 mac_changer.py --help
+python3 mac_changer.py --help
 ```
 ```bash                
-    python3 mac_changer.py -h
+python3 mac_changer.py -h
 ```
 
     
