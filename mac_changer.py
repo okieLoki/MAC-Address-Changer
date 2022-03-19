@@ -4,8 +4,6 @@ import subprocess
 import optparse
 import re
 
-from flask_login import current_user
-
 def get_arguments():
     parser= optparse.OptionParser()
 
