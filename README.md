@@ -34,7 +34,7 @@ $ python3 mac_changer.py -h
 ![](images/image.png)
 
 
-## Python Libraries used:
+## Python Libraries that are used:
 
 - subprocess
 - optparse
